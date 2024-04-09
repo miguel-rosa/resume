@@ -6,46 +6,76 @@
 </head>
 <style>
   * {
-    box-sizing: border-box
+    box-sizing: border-box;
+    margin: 0;
   }
 
   article {
     margin: 0 auto;
     max-width: 1280px;
-    padding: 20px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    padding: 20px 20px;
+    font-family: 'Times New Roman', Times, serif;
 
   }
   a, a:active, a:any-link {
-    margin-right: 20px;
     color: #0366d6;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px
   }
 
   html {
     font-size: 18px;
   }
+  .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0 0 0;
+  }
+  .links a {
+    padding: 0 10px;
+  }
 
 
 h1 {
-  font-size: 36px
+  font-size: 32px;
+  text-align:center;
 }
 h2  {
-   font-size: 28px;
-}
-h3 {
-  font-size: 26px;
-  margin: 20px 0 10px 0;
+   font-size: 18px;
+   border-bottom: 1px solid black;
+   text-align: center;
+   padding-bottom: 10px;
+   margin: 20px 0;
 }
 
-h4  {
-   font-size: 22px;
-   margin: 0 0 10px 0;
+.experience {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-span{
-  font-size: 18px;
-  margin: 0;
+h4, span {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom:10px;
+  font-weight: 500;
+}
+h3 {
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+
+
+li {
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+ul {
+  padding-left: 16px;
+  
 }
 
 </style>
@@ -53,87 +83,85 @@ span{
 <body>
 
   <article>
-    <h1>Miguel Rosa</h1>
-    <p>
-      I'm a Mobile Engineer with over 5 years of experience and a genuine passion for solving problems, learning, and creating new things. I currently work at Corebiz, coordinating our React Native e-commerce framework, and helping with the developer tooling, componentization, and Mobile Infrastructure. 
-    </p>
-  
-
+    <h1>Miguel Pereira Rosa Gonçalves</h1>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/miguelgoncvs/">LinkedIn</a> 
+      
+      <a href="https://wdt.com.br">wdt.com.br</a> 
+      <a href="mailto:miguelgoncvs@gmail.com">miguelgoncvs@gmail.com</a>
       <a href="https://github.com/miguel-rosa">GitHub</a> 
-      <a href="https://wdt.com.br">Website</a> 
-      <a href="mailto:miguelgoncvs@gmail.com">Email</a>
-
+    </div>
     <h2>Skills</h2>
-    <p>
-      I work primarily with React Native (bare and expo projects) and TypeScript. I've Experienced working with GraphQL, REST APIs, and third-party libraries and frameworks. A lot of experience with mobile solutions like Appcenter, Bitrise, Firebase, Sentry, Appsflyer, and much more. I advocate for clean code, helping standardize coding design and styles and sharing knowledge. Also have a Keen eye for UI and UX, familiar with Adobe XD and Figma.
-    </p>
-    <p>
-My managers and coworkers usually think I'm a hard worker, good-humored, and communicative. Beyond the code, I have a deep understanding of Agile development principles, leadership, team allocation, and interviewing
+    <ul>
+      <li>JavaScript | TypeScript | React | React Native | Node.js | Express | Koa.js | Nest.js | GraphQL | Postgres | JQuery | Golang | NoSQL</li>
+      <li>Git | Next.js | HTML | CSS | Tailwind | CI/CD | REST | Expo | Agile | Frontend | Mobile | Backend | Full-Stack 
+    </ul>
 </p>
-    <h2>Working Experience</h2>
-    <a href="https://corebiz.ag">
-    <h3>
-          Corebiz
-        </h3>
-      </a>
-    <h4>Mobile Tech Lead</h4>
-    <span>2023/05 - now</span>
+    <h2>Experience</h2>
+    <h3>VML</h3>
+    <div class="experience">
+      <h4>Senior Software Engineer</h4>
+    <span>03/2022 - now</span>
+  </div>
     <ul>
-      <li>Coordinate our React Native E-commerce framework maintenance.</li>
-      <li>Consultant as a service, architecture mobile e-commerce implementation for enterprises.</li>
-      <li>Designed and developed CI/CD pipelines for more than 10 iOS and Android applications.</li>
-      <li>Structure the development workflow of the mobile team, using the best practices that fit our needs (code review, gitflow, semver, conventional commits, and more).</li>
-    </ul>
-    <h4>Senior Mobile Engineer</h4>
-    <span>2022/03 - 2023/05</span>
+      <li>Led the design and development of a mobile E-commerce framework that increased the revenue of mobile projects by more than 60% using the latest technologies 
+        <b>TypeScript, React Native, GraphQL, NestJs, and GitLab.</b></li>
+      <li>Designed and Implemented scalable APIs and background workers for complex e-commerce flows, such as order change, and invoice and refund, that use <b>Node</b> with <b>Koa.JS</b> that serves millions of requests daily.</li>
+      <li>Structure the development workflow with multiple processes such as code review, gitflow, semver, conventional commits, CI/CD that <b>reduced the time spent in deploys to more than 4 hours per week</b> across more than 5 different teams.</li>
+      <li>Enhanced systems metrics by integrating the mobile applications with crashlytics and performance monitoring tools.</li>
+      <li>Worked as a consultant for huge mobile ecommerces, helping companies grow their applications to achieve more than <b>10 million downloads.</b></li>
+    </ul>   
+    <h3>Corebiz</h3>
+    <div class="experience">
+      <h4>Software Engineer</h4>
+    <span>09/2020 - 03/2022</span>
+  </div>
     <ul>
-      <li>Design and develop a new modularized and scalable React Native E-commerce framework, that enables the project's core shared structure to grow as a product.</li>
+      <li>Development and maintenance of DTC and B2B headless e-commerces for Motorola Europe, for more than 37 countries, that <b>increased their conversion rate by more than 25%</b>, using <b>TypeScript, React, GraphQL, and Node</b></li>
+      <li>Evolve the DTC ecommerce for Motorola UAE, shipping new E2E features, <b>achieving a GMGR of 300% in sales</b> </li>
+      <li>Maintain a legacy checkout system, and ship a rewrite to share the code between 20 different stores, using <b>HTML, CSS, JavaScript, and JQuery</b></li>
       <li>Work closely with the clients, designers, managers, product owners, and other developers, supporting decision-making by understanding the project's needs.</li>
-      <li>Release applications to the Apple and Google Play stores, and when needed ship over-the-air updates.
-      <li>Implement tools to track metrics about performance, app usage, and crashes, aiming to solve problems before they happen, and improve the app experience.</li>
-      <li>Mentoring Junior developers and newcomers.</li>
-    </ul>
-    <h4>Frontend Engineer</h4> 
-    <span>2022/09 - 2022/03</span>
-    <ul>
-      <li>
-        Development and maintenance of DTC and B2B for Motorola Europe and MEA, adding up to more than 25 country stores, like the United Kingdom, Spain, Germany, France Russia, and Poland.</li>
-      <li>Creation and maintenance of components, using ReactJS, TypeScript, and GraphQL.</li>
-      <li>Creation and maintenance of apps, services, and clients with NodeJS, KoaJS, TypeScript, and GraphQL.</li>
-    </ul>
-   
-    <a href="https://upsites.digital/">
-    <h3>
-        Upsites Digital
-      </h3>
-    </a>
-    <h4>Frontend Developer</h4>
-    <span>2019/06 - 2020/08</span>
-    <ul>
-      <li>Development of digital products using WordPress Headless REST API.</li>
-      <li>Creation of UI components using HTML, CSS, and JavaScript.</li>
-      <li>Support and maintenance of products developed at the SAAS platform of the company.</li>
-    </ul>
+    </ul>   
 
-
-    <a href="https://www.linkedin.com/company/growth-conference/">
-    <h3>
-        GrowthMasters®
-      </h3>
-    </a>
-    <h4>Frontend Developer</h4>
-    <span>2018/03 - 2019/06</span>
+    <h3>Upsites Digital</h3>
+    <div class="experience">
+      <h4>Software Engineer</h4>
+    <span>06/2019 - 09/2020</span>
+    </div>
     <ul>
-      <li>Creation of landing pages for events campaigns, using HTML, CSS, and JavaScript.</li>
-      <li>Maintenance of a legacy WordPress system.</li>
-      <li>Designed and develop features for the new event CMS system, based on WordPress Headless.</li>
+      <li>Build cross-browser and highly interactive web applications using <b></b>React, JavaScript, HTML, and CSS</b></li>
+      <li>Integrate frontend and backend systems with different third-party services, using RESTFful APIs and SDKs using PHP</li>
+      <li>Develop and maintain a SaaS platform that uses AWS services to deliver a no-code experience building landing pages and websites</li>
+      <li>Implement SEO in websites that helped clients to land in the <b>first result page from Google</b> in high competitive words and terms</li>
     </ul>
-    <h3>
-
+    <h3>Notável Digital Marketing Agency</h3>
+    <div class="experience">
+    <h4>Software Engineer</h4>
+      <span>06/2018 - 06/2019</span>
+    </div>
+    <ul>
+    <li>Design and develop e-commerce stores (PHP, HTML, CSS, JavaScript, and React)</li>
+    </ul>
+    <h3>Top 3 Suplementos</h3>
+    <div class="experience">
+    <h4>Software Engineer, Intern</h4>
+      <span>02/2018 - 06/2018</span>
+    </div>
+    <ul>
+    <li>Manage a headless e-commerce system (PHP, HTML, CSS and, JavaScript)</li>
+    </ul>
     <h2>Education</h2>
     <ul>
-      <li>Bachelor's Degree in Computer Science, <strong>Anhembi Morumbi University</strong> <em>(2021 – 2024)</em></li>
-      <li>Technical College in Information Systems, <strong>FITO</strong> <em>(2015 – 2018)</em></li>
+      <li>Technical College in Information Systems, <strong>FITO, Brazil</strong> <em>(2015 – 2018)</em></li>
+    </ul>
+    <!-- <h2>Projects</h2>
+    <ul>
+      <li><b>ondié</b>: Designed and develop a Technical College in Information Systems, <strong>FITO</strong> <em>(2015 – 2018)</em></li>
+    </ul> -->
+    <h2>Mentorship</h2>
+    <ul>
+      <li><b>GoBeyond:</b> Coding Bootcamp Mentor, responsible for mentoring developers and presenting React classes <em>(2021 - 2022)</em></li>
+      <li><b>VTEX Hiring Coders:</b> Mentor 7 groups, teaching frontend, backend, AWS, and E-Commerce basics <em>(2022) </em></li>
     </ul>
   </article>
 
